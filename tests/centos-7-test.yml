@@ -1,0 +1,6 @@
+---
+# test file
+
+- hosts: localhost
+  roles:
+    - role_under_test

@@ -1,0 +1,17 @@
+---
+# tasks for chrony Configure
+
+- name: Copy the chrony.conf.
+  template:
+    src: chrony.conf.j2
+    dest: "{{ chrony_config_location }}"
+    owner: root
+    group: root
+    mode: 0664
+  notify: restart chrony
+
+- name: Ensure chrony services is started and enabled at boot.
+  service:
+    name: "{{ chrony_service_name }}"
+    state: started
+    enabled: yes

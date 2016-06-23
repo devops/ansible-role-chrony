@@ -1,0 +1,15 @@
+galaxy_info:
+  author: z
+  description: Installs and configures chrony.
+  company:
+  license: license (BSD, MIT)
+  min_ansible_version: 1.9
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - system
+    - ntp
+    - chrony
+dependencies: []

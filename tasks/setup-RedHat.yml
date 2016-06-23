@@ -1,0 +1,8 @@
+---
+# tasks file for RedHat
+
+- name: Ensure chrony packages are installed (RedHat).
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ chrony_packages }}"

@@ -1,0 +1,5 @@
+---
+# vars file for Redhat
+
+chrony_service_name: chronyd
+chrony_config_location: /etc/chrony.conf
